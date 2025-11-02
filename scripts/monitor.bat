@@ -1,0 +1,3 @@
+@echo off
+echo Starting JVM Profiler Tool...
+java -jar target/jvm-profiler-tool-1.0.0.jar %*

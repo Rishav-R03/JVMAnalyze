@@ -1,0 +1,76 @@
+2025-11-02 14:53:02.585 [main] INFO  com.jvmprofiler.Main - Starting JVM Profiler Tool
+2025-11-02 15:05:43.936 [main] INFO  com.jvmprofiler.Main - Starting JVM Profiler Tool
+2025-11-02 15:05:43.944 [main] INFO  com.jvmprofiler.cli.CLIHandler - Starting monitoring for PID: 1234, interval: 2s, duration: unlimited
+2025-11-02 15:05:44.026 [main] INFO  com.jvmprofiler.monitor.JVMProfilerJMXConnector - Successfully connected to JVM process: 1234
+2025-11-02 15:06:34.556 [main] ERROR com.jvmprofiler.monitor.JVMProfilerJMXConnector - Error collecting metrics: Connection refused to host: 172.25.40.249; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+java.rmi.ConnectException: Connection refused to host: 172.25.40.249; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+	at sun.rmi.transport.tcp.TCPEndpoint.newSocket(TCPEndpoint.java:615) ~[?:?]
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:150) ~[?:?]
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(TCPChannel.java:137) ~[?:?]
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:130) ~[?:?]
+	at jdk.jmx.remote.internal.rmi.PRef.invoke(Unknown Source) ~[?:?]
+	at javax.management.remote.rmi.RMIConnectionImpl_Stub.getAttribute(RMIConnectionImpl_Stub.java:288) ~[?:?]
+	at javax.management.remote.rmi.RMIConnector$RemoteMBeanServerConnection.getAttribute(RMIConnector.java:876) ~[?:?]
+	at com.jvmprofiler.monitor.JVMProfilerJMXConnector.collectMemoryMetrics(JVMProfilerJMXConnector.java:69) ~[jvm-profiler-tool-1.0.0.jar:?]
+	at com.jvmprofiler.monitor.JVMProfilerJMXConnector.collectMetrics(JVMProfilerJMXConnector.java:54) [jvm-profiler-tool-1.0.0.jar:?]
+	at com.jvmprofiler.monitor.RealTimeDashboard.startMonitoring(RealTimeDashboard.java:35) [jvm-profiler-tool-1.0.0.jar:?]
+	at com.jvmprofiler.cli.CLIHandler.handleMonitorCommand(CLIHandler.java:50) [jvm-profiler-tool-1.0.0.jar:?]
+	at com.jvmprofiler.cli.CLIHandler.handleCommand(CLIHandler.java:26) [jvm-profiler-tool-1.0.0.jar:?]
+	at com.jvmprofiler.Main.main(Main.java:23) [jvm-profiler-tool-1.0.0.jar:?]
+Caused by: java.net.ConnectException: Connection refused: connect
+	at sun.nio.ch.Net.connect0(Native Method) ~[?:?]
+	at sun.nio.ch.Net.connect(Net.java:546) ~[?:?]
+	at sun.nio.ch.Net.connect(Net.java:535) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:585) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:284) ~[?:?]
+	at java.net.Socket.connect(Socket.java:659) ~[?:?]
+	at java.net.Socket.connect(Socket.java:597) ~[?:?]
+	at java.net.Socket.<init>(Socket.java:464) ~[?:?]
+	at java.net.Socket.<init>(Socket.java:276) ~[?:?]
+	at sun.rmi.transport.tcp.TCPDirectSocketFactory.createSocket(TCPDirectSocketFactory.java:40) ~[?:?]
+	at sun.rmi.transport.tcp.TCPEndpoint.newSocket(TCPEndpoint.java:609) ~[?:?]
+	... 12 more
+2025-11-02 15:06:34.568 [main] ERROR com.jvmprofiler.monitor.RealTimeDashboard - Monitoring error: Failed to collect metrics
+java.lang.RuntimeException: Failed to collect metrics
+	at com.jvmprofiler.monitor.JVMProfilerJMXConnector.collectMetrics(JVMProfilerJMXConnector.java:63) ~[jvm-profiler-tool-1.0.0.jar:?]
+	at com.jvmprofiler.monitor.RealTimeDashboard.startMonitoring(RealTimeDashboard.java:35) [jvm-profiler-tool-1.0.0.jar:?]
+	at com.jvmprofiler.cli.CLIHandler.handleMonitorCommand(CLIHandler.java:50) [jvm-profiler-tool-1.0.0.jar:?]
+	at com.jvmprofiler.cli.CLIHandler.handleCommand(CLIHandler.java:26) [jvm-profiler-tool-1.0.0.jar:?]
+	at com.jvmprofiler.Main.main(Main.java:23) [jvm-profiler-tool-1.0.0.jar:?]
+Caused by: java.rmi.ConnectException: Connection refused to host: 172.25.40.249; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+	at sun.rmi.transport.tcp.TCPEndpoint.newSocket(TCPEndpoint.java:615) ~[?:?]
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:150) ~[?:?]
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(TCPChannel.java:137) ~[?:?]
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:130) ~[?:?]
+	at jdk.jmx.remote.internal.rmi.PRef.invoke(Unknown Source) ~[?:?]
+	at javax.management.remote.rmi.RMIConnectionImpl_Stub.getAttribute(RMIConnectionImpl_Stub.java:288) ~[?:?]
+	at javax.management.remote.rmi.RMIConnector$RemoteMBeanServerConnection.getAttribute(RMIConnector.java:876) ~[?:?]
+	at com.jvmprofiler.monitor.JVMProfilerJMXConnector.collectMemoryMetrics(JVMProfilerJMXConnector.java:69) ~[jvm-profiler-tool-1.0.0.jar:?]
+	at com.jvmprofiler.monitor.JVMProfilerJMXConnector.collectMetrics(JVMProfilerJMXConnector.java:54) ~[jvm-profiler-tool-1.0.0.jar:?]
+	... 4 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at sun.nio.ch.Net.connect0(Native Method) ~[?:?]
+	at sun.nio.ch.Net.connect(Net.java:546) ~[?:?]
+	at sun.nio.ch.Net.connect(Net.java:535) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:585) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:284) ~[?:?]
+	at java.net.Socket.connect(Socket.java:659) ~[?:?]
+	at java.net.Socket.connect(Socket.java:597) ~[?:?]
+	at java.net.Socket.<init>(Socket.java:464) ~[?:?]
+	at java.net.Socket.<init>(Socket.java:276) ~[?:?]
+	at sun.rmi.transport.tcp.TCPDirectSocketFactory.createSocket(TCPDirectSocketFactory.java:40) ~[?:?]
+	at sun.rmi.transport.tcp.TCPEndpoint.newSocket(TCPEndpoint.java:609) ~[?:?]
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:150) ~[?:?]
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(TCPChannel.java:137) ~[?:?]
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:130) ~[?:?]
+	at jdk.jmx.remote.internal.rmi.PRef.invoke(Unknown Source) ~[?:?]
+	at javax.management.remote.rmi.RMIConnectionImpl_Stub.getAttribute(RMIConnectionImpl_Stub.java:288) ~[?:?]
+	at javax.management.remote.rmi.RMIConnector$RemoteMBeanServerConnection.getAttribute(RMIConnector.java:876) ~[?:?]
+	at com.jvmprofiler.monitor.JVMProfilerJMXConnector.collectMemoryMetrics(JVMProfilerJMXConnector.java:69) ~[jvm-profiler-tool-1.0.0.jar:?]
+	at com.jvmprofiler.monitor.JVMProfilerJMXConnector.collectMetrics(JVMProfilerJMXConnector.java:54) ~[jvm-profiler-tool-1.0.0.jar:?]
+	... 4 more
+2025-11-02 15:06:36.624 [main] ERROR com.jvmprofiler.monitor.JVMProfilerJMXConnector - Error disconnecting: Connection refused to host: 172.25.40.249; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
