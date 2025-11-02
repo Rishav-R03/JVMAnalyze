@@ -74,3 +74,69 @@ Caused by: java.net.ConnectException: Connection refused: connect
 	... 4 more
 2025-11-02 15:06:36.624 [main] ERROR com.jvmprofiler.monitor.JVMProfilerJMXConnector - Error disconnecting: Connection refused to host: 172.25.40.249; nested exception is: 
 	java.net.ConnectException: Connection refused: connect
+2025-11-02 15:17:47.153 [main] INFO  com.jvmprofiler.Main - Starting JVM Profiler Tool
+2025-11-02 15:17:47.164 [main] INFO  com.jvmprofiler.cli.CLIHandler - Starting monitoring for PID: 1234, interval: 2s, duration: unlimited
+2025-11-02 15:17:47.240 [main] INFO  com.jvmprofiler.monitor.JVMProfilerJMXConnector - Successfully connected to JVM process: 1234
+2025-11-02 15:39:55.232 [main] INFO  com.jvmprofiler.Main - Starting JVM Profiler Tool
+2025-11-02 15:39:55.241 [main] INFO  com.jvmprofiler.cli.CLIHandler - Analyzing GC log file: examples\gc-logs\g1gc-sample.log
+2025-11-02 15:39:55.244 [main] INFO  com.jvmprofiler.analyzer.GCLogParser - Parsing GC log file: examples\gc-logs\g1gc-sample.log
+2025-11-02 15:39:55.669 [main] INFO  com.jvmprofiler.Main - Starting JVM Profiler Tool
+2025-11-02 15:39:55.677 [main] INFO  com.jvmprofiler.cli.CLIHandler - Analyzing GC log file: examples\gc-logs\zgc-sample.log
+2025-11-02 15:39:55.679 [main] INFO  com.jvmprofiler.analyzer.GCLogParser - Parsing GC log file: examples\gc-logs\zgc-sample.log
+2025-11-02 15:39:56.090 [main] INFO  com.jvmprofiler.Main - Starting JVM Profiler Tool
+2025-11-02 15:39:56.098 [main] INFO  com.jvmprofiler.cli.CLIHandler - Detecting memory leaks in GC log file: examples\gc-logs\memory-leak-sample.log
+2025-11-02 15:39:56.101 [main] INFO  com.jvmprofiler.analyzer.GCLogParser - Parsing GC log file: examples\gc-logs\memory-leak-sample.log
+2025-11-02 15:39:56.509 [main] INFO  com.jvmprofiler.Main - Starting JVM Profiler Tool
+2025-11-02 15:39:56.517 [main] INFO  com.jvmprofiler.cli.CLIHandler - Analyzing GC log file: examples\gc-logs\parallelgc-sample.log
+2025-11-02 15:39:56.519 [main] INFO  com.jvmprofiler.analyzer.GCLogParser - Parsing GC log file: examples\gc-logs\parallelgc-sample.log
+2025-11-02 15:41:24.719 [main] INFO  com.jvmprofiler.Main - Starting JVM Profiler Tool
+2025-11-02 15:41:24.728 [main] INFO  com.jvmprofiler.cli.CLIHandler - Starting monitoring for PID: 1234, interval: 2s, duration: unlimited
+2025-11-02 15:41:24.804 [main] INFO  com.jvmprofiler.monitor.JVMProfilerJMXConnector - Successfully connected to JVM process: 1234
+2025-11-02 15:44:18.076 [main] INFO  com.jvmprofiler.Main - Starting JVM Profiler Tool
+2025-11-02 15:44:18.088 [main] INFO  com.jvmprofiler.cli.CLIHandler - Analyzing GC log file: examples\gc-logs\g1gc-sample.log
+2025-11-02 15:44:18.090 [main] INFO  com.jvmprofiler.analyzer.GCLogParser - Parsing GC log file: examples\gc-logs\g1gc-sample.log
+2025-11-02 15:44:18.509 [main] INFO  com.jvmprofiler.Main - Starting JVM Profiler Tool
+2025-11-02 15:44:18.517 [main] INFO  com.jvmprofiler.cli.CLIHandler - Analyzing GC log file: examples\gc-logs\zgc-sample.log
+2025-11-02 15:44:18.519 [main] INFO  com.jvmprofiler.analyzer.GCLogParser - Parsing GC log file: examples\gc-logs\zgc-sample.log
+2025-11-02 15:44:18.944 [main] INFO  com.jvmprofiler.Main - Starting JVM Profiler Tool
+2025-11-02 15:44:18.953 [main] INFO  com.jvmprofiler.cli.CLIHandler - Detecting memory leaks in GC log file: examples\gc-logs\memory-leak-sample.log
+2025-11-02 15:44:18.954 [main] INFO  com.jvmprofiler.analyzer.GCLogParser - Parsing GC log file: examples\gc-logs\memory-leak-sample.log
+2025-11-02 15:44:19.374 [main] INFO  com.jvmprofiler.Main - Starting JVM Profiler Tool
+2025-11-02 15:44:19.383 [main] INFO  com.jvmprofiler.cli.CLIHandler - Analyzing GC log file: examples\gc-logs\parallelgc-sample.log
+2025-11-02 15:44:19.386 [main] INFO  com.jvmprofiler.analyzer.GCLogParser - Parsing GC log file: examples\gc-logs\parallelgc-sample.log
+2025-11-02 15:44:29.658 [main] INFO  com.jvmprofiler.Main - Starting JVM Profiler Tool
+2025-11-02 15:44:29.667 [main] INFO  com.jvmprofiler.cli.CLIHandler - Starting monitoring for PID: 1234, interval: 2s, duration: unlimited
+2025-11-02 15:44:29.709 [main] ERROR com.jvmprofiler.monitor.JVMProfilerJMXConnector - Failed to connect to JVM process 1234: Failed to retrieve RMIServer stub: javax.naming.ServiceUnavailableException [Root exception is java.rmi.ConnectException: Connection refused to host: 127.0.0.1; nested exception is: 
+	java.net.ConnectException: Connection refused: connect]
+2025-11-02 15:44:50.170 [main] INFO  com.jvmprofiler.Main - Starting JVM Profiler Tool
+2025-11-02 15:44:50.178 [main] INFO  com.jvmprofiler.cli.CLIHandler - Starting monitoring for PID: 1234, interval: 2s, duration: unlimited
+2025-11-02 15:44:50.255 [main] INFO  com.jvmprofiler.monitor.JVMProfilerJMXConnector - Successfully connected to JVM process: 1234
+2025-11-02 15:45:00.456 [main] INFO  com.jvmprofiler.Main - Starting JVM Profiler Tool
+2025-11-02 15:45:00.464 [main] INFO  com.jvmprofiler.cli.CLIHandler - Analyzing GC log file: examples\gc-logs\g1gc-sample.log
+2025-11-02 15:45:00.466 [main] INFO  com.jvmprofiler.analyzer.GCLogParser - Parsing GC log file: examples\gc-logs\g1gc-sample.log
+2025-11-02 15:45:00.870 [main] INFO  com.jvmprofiler.Main - Starting JVM Profiler Tool
+2025-11-02 15:45:00.878 [main] INFO  com.jvmprofiler.cli.CLIHandler - Analyzing GC log file: examples\gc-logs\zgc-sample.log
+2025-11-02 15:45:00.881 [main] INFO  com.jvmprofiler.analyzer.GCLogParser - Parsing GC log file: examples\gc-logs\zgc-sample.log
+2025-11-02 15:45:01.293 [main] INFO  com.jvmprofiler.Main - Starting JVM Profiler Tool
+2025-11-02 15:45:01.301 [main] INFO  com.jvmprofiler.cli.CLIHandler - Detecting memory leaks in GC log file: examples\gc-logs\memory-leak-sample.log
+2025-11-02 15:45:01.303 [main] INFO  com.jvmprofiler.analyzer.GCLogParser - Parsing GC log file: examples\gc-logs\memory-leak-sample.log
+2025-11-02 15:45:01.715 [main] INFO  com.jvmprofiler.Main - Starting JVM Profiler Tool
+2025-11-02 15:45:01.723 [main] INFO  com.jvmprofiler.cli.CLIHandler - Analyzing GC log file: examples\gc-logs\parallelgc-sample.log
+2025-11-02 15:45:01.727 [main] INFO  com.jvmprofiler.analyzer.GCLogParser - Parsing GC log file: examples\gc-logs\parallelgc-sample.log
+2025-11-02 16:04:29.054 [main] INFO  com.jvmprofiler.Main - Starting JVM Profiler Tool
+2025-11-02 16:04:29.069 [main] INFO  com.jvmprofiler.cli.CLIHandler - Analyzing GC log file: examples\gc-logs\g1gc-sample.log
+2025-11-02 16:04:29.075 [main] INFO  com.jvmprofiler.analyzer.GCLogParser - Parsing GC log file: examples\gc-logs\g1gc-sample.log
+2025-11-02 16:04:29.750 [main] INFO  com.jvmprofiler.Main - Starting JVM Profiler Tool
+2025-11-02 16:04:29.767 [main] INFO  com.jvmprofiler.cli.CLIHandler - Analyzing GC log file: examples\gc-logs\zgc-sample.log
+2025-11-02 16:04:29.771 [main] INFO  com.jvmprofiler.analyzer.GCLogParser - Parsing GC log file: examples\gc-logs\zgc-sample.log
+2025-11-02 16:04:30.455 [main] INFO  com.jvmprofiler.Main - Starting JVM Profiler Tool
+2025-11-02 16:04:30.471 [main] INFO  com.jvmprofiler.cli.CLIHandler - Detecting memory leaks in GC log file: examples\gc-logs\memory-leak-sample.log
+2025-11-02 16:04:30.474 [main] INFO  com.jvmprofiler.analyzer.GCLogParser - Parsing GC log file: examples\gc-logs\memory-leak-sample.log
+2025-11-02 16:04:31.122 [main] INFO  com.jvmprofiler.Main - Starting JVM Profiler Tool
+2025-11-02 16:04:31.138 [main] INFO  com.jvmprofiler.cli.CLIHandler - Analyzing GC log file: examples\gc-logs\parallelgc-sample.log
+2025-11-02 16:04:31.140 [main] INFO  com.jvmprofiler.analyzer.GCLogParser - Parsing GC log file: examples\gc-logs\parallelgc-sample.log
+2025-11-02 16:06:41.306 [main] INFO  com.jvmprofiler.Main - Starting JVM Profiler Tool
+2025-11-02 16:06:51.225 [main] INFO  com.jvmprofiler.Main - Starting JVM Profiler Tool
+2025-11-02 16:06:51.238 [main] INFO  com.jvmprofiler.cli.CLIHandler - Starting monitoring for PID: 1234, interval: 2s, duration: unlimited
+2025-11-02 16:06:51.301 [main] ERROR com.jvmprofiler.monitor.JVMProfilerJMXConnector - Failed to connect to JVM process 1234: Failed to retrieve RMIServer stub: javax.naming.ServiceUnavailableException [Root exception is java.rmi.ConnectException: Connection refused to host: 127.0.0.1; nested exception is: 
+	java.net.ConnectException: Connection refused: connect]

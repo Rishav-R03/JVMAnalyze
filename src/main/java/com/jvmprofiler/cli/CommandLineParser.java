@@ -36,9 +36,34 @@ public class CommandLineParser {
                 .desc("Monitoring duration (default: until stopped)")
                 .build();
 
+        // Analyze GC command
+        Option analyzeGc = Option.builder("a")
+                .longOpt("analyze-gc")
+                .hasArg()
+                .argName("file")
+                .desc("Analyze GC log file and generate report")
+                .build();
+
+        Option output = Option.builder("o")
+                .longOpt("output")
+                .hasArg()
+                .argName("format")
+                .desc("Output format: text, json, html (default: text)")
+                .build();
+
+        Option detectLeaks = Option.builder("L")
+                .longOpt("detect-leaks")
+                .hasArg()
+                .argName("file")
+                .desc("Detect memory leaks in GC log file")
+                .build();
+
         options.addOption(monitor);
         options.addOption(interval);
         options.addOption(duration);
+        options.addOption(analyzeGc);
+        options.addOption(output);
+        options.addOption(detectLeaks);
         options.addOption("h", "help", false, "Show help");
     }
 
@@ -53,6 +78,9 @@ public class CommandLineParser {
         System.out.println("\nExamples:");
         System.out.println("  jvm-profiler --monitor 1234");
         System.out.println("  jvm-profiler --monitor 1234 --interval 1 --duration 60");
+        System.out.println("  jvm-profiler --analyze-gc gc.log");
+        System.out.println("  jvm-profiler --analyze-gc gc.log --output html");
+        System.out.println("  jvm-profiler --detect-leaks gc.log");
         System.out.println("  jvm-profiler --help");
     }
 }
