@@ -86,7 +86,13 @@ Demo with Sample Data
 bash
 # Run comprehensive demo with sample GC logs
 scripts\test-analyzer.bat
+# System Architecture
+<img width="561" height="341" alt="JVMAnalyzer-Diagram drawio" src="https://github.com/user-attachments/assets/18ae3e7d-d50c-4730-b853-94200b6ad00e" />
+
 📊 Sample Output
+<img width="1099" height="938" alt="image" src="https://github.com/user-attachments/assets/215ae925-28a4-4880-a987-059d4e1373d3" />
+
+
 Real-time Dashboard
 
 ╔════════════════════════════════════════════════════════════╗
@@ -107,6 +113,12 @@ GC Analysis Report
 ║ GC Time Percentage: 8.3%                                   ║
 ║ Application Throughput: 91.7%                              ║
 ══════════════════════════════════════════════════════════════
+
+Screenshots 
+<img width="1277" height="579" alt="image" src="https://github.com/user-attachments/assets/09da2da8-b76a-4ada-9f99-be1ca3ef3bcc" />
+
+<img width="773" height="315" alt="image" src="https://github.com/user-attachments/assets/ddca6592-cf75-4f91-9c69-6e9080c57c1d" />
+
 🚨 [CRITICAL] Found 12 critical pauses (>1000ms)
 ⚠️  [WARNING] GC time is 8.3% of total time (threshold: 5.0%)
 
