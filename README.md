@@ -127,22 +127,8 @@ RECOMMENDATIONS:
 2. Consider tuning G1GC: -XX:MaxGCPauseMillis
 🏗 Project Structure
 
-jvm-profiler-tool/
-├── src/main/java/com/jvmprofiler/
-│   ├── analyzer/           # GC log analysis engine
-│   │   ├── GCLogParser.java
-│   │   ├── GCLogAnalyzer.java
-│   │   ├── MemoryLeakDetector.java
-│   │   └── parsers/        # GC-specific parsers
-│   ├── monitor/            # Real-time monitoring
-│   │   ├── JVMProfilerJMXConnector.java
-│   │   ├── RealTimeDashboard.java
-│   │   └── metrics/        # Metrics collectors
-│   ├── cli/               # Command-line interface
-│   └── report/            # Report generation
-├── examples/gc-logs/      # Sample GC logs for testing
-├── scripts/               # Utility scripts
-└── target/               # Build output
+<img width="620" height="907" alt="image" src="https://github.com/user-attachments/assets/11ba9b1a-42c8-4ecf-ab5d-a40ee3a6d60a" />
+
 
 🔧 Technical Highlights
 
