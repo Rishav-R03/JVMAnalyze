@@ -1,9 +1,4 @@
 🚀 JVM Profiler Tool
-https://img.shields.io/badge/Java-25-orange.svg
-
-https://img.shields.io/badge/Maven-3.9+-blue.svg
-
-https://img.shields.io/badge/License-MIT-green.svg
 
 Advanced JVM monitoring and performance analysis tool that provides real-time insights into Java application performance, GC behavior, and memory usage.
 
