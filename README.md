@@ -1,6 +1,8 @@
 🚀 JVM Profiler Tool
 https://img.shields.io/badge/Java-25-orange.svg
+
 https://img.shields.io/badge/Maven-3.9+-blue.svg
+
 https://img.shields.io/badge/License-MIT-green.svg
 
 Advanced JVM monitoring and performance analysis tool that provides real-time insights into Java application performance, GC behavior, and memory usage.
@@ -51,16 +53,18 @@ Maven 3.9+
 Installation
 bash
 # Clone the repository
-git clone https://github.com/yourusername/jvm-profiler-tool.git
-cd jvm-profiler-tool
+git clone [https://github.com/Rishav-R03/JVMAnalyze.git](https://github.com/Rishav-R03/JVMAnalyze)
+cd JVMAnalyze
 
 # Build the project
 mvn clean compile package
 
 # Run the tool
 java -jar target/jvm-profiler-tool-1.0.0.jar --help
+
 🎯 Usage Examples
 Real-time Monitoring
+
 bash
 # Monitor a running JVM process
 java -jar target/jvm-profiler-tool-1.0.0.jar --monitor <PID> --interval 2
