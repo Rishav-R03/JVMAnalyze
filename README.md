@@ -1,9 +1,4 @@
 🚀 JVM Profiler Tool
-https://img.shields.io/badge/Java-25-orange.svg
-
-https://img.shields.io/badge/Maven-3.9+-blue.svg
-
-https://img.shields.io/badge/License-MIT-green.svg
 
 Advanced JVM monitoring and performance analysis tool that provides real-time insights into Java application performance, GC behavior, and memory usage.
 
@@ -86,7 +81,13 @@ Demo with Sample Data
 bash
 # Run comprehensive demo with sample GC logs
 scripts\test-analyzer.bat
+# System Architecture
+<img width="561" height="341" alt="JVMAnalyzer-Diagram drawio" src="https://github.com/user-attachments/assets/18ae3e7d-d50c-4730-b853-94200b6ad00e" />
+
 📊 Sample Output
+<img width="1099" height="938" alt="image" src="https://github.com/user-attachments/assets/215ae925-28a4-4880-a987-059d4e1373d3" />
+
+
 Real-time Dashboard
 
 ╔════════════════════════════════════════════════════════════╗
@@ -107,6 +108,12 @@ GC Analysis Report
 ║ GC Time Percentage: 8.3%                                   ║
 ║ Application Throughput: 91.7%                              ║
 ══════════════════════════════════════════════════════════════
+
+Screenshots 
+<img width="1277" height="579" alt="image" src="https://github.com/user-attachments/assets/09da2da8-b76a-4ada-9f99-be1ca3ef3bcc" />
+
+<img width="773" height="315" alt="image" src="https://github.com/user-attachments/assets/ddca6592-cf75-4f91-9c69-6e9080c57c1d" />
+
 🚨 [CRITICAL] Found 12 critical pauses (>1000ms)
 ⚠️  [WARNING] GC time is 8.3% of total time (threshold: 5.0%)
 
@@ -115,22 +122,8 @@ RECOMMENDATIONS:
 2. Consider tuning G1GC: -XX:MaxGCPauseMillis
 🏗 Project Structure
 
-jvm-profiler-tool/
-├── src/main/java/com/jvmprofiler/
-│   ├── analyzer/           # GC log analysis engine
-│   │   ├── GCLogParser.java
-│   │   ├── GCLogAnalyzer.java
-│   │   ├── MemoryLeakDetector.java
-│   │   └── parsers/        # GC-specific parsers
-│   ├── monitor/            # Real-time monitoring
-│   │   ├── JVMProfilerJMXConnector.java
-│   │   ├── RealTimeDashboard.java
-│   │   └── metrics/        # Metrics collectors
-│   ├── cli/               # Command-line interface
-│   └── report/            # Report generation
-├── examples/gc-logs/      # Sample GC logs for testing
-├── scripts/               # Utility scripts
-└── target/               # Build output
+<img width="620" height="907" alt="image" src="https://github.com/user-attachments/assets/11ba9b1a-42c8-4ecf-ab5d-a40ee3a6d60a" />
+
 
 🔧 Technical Highlights
 
