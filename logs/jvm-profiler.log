@@ -254,3 +254,24 @@ Caused by: java.net.ConnectException: Connection refused: connect
 2025-11-04 21:14:07.451 [main] INFO  com.jvmprofiler.monitor.JVMProfilerJMXConnector - Successfully connected to JVM process: 1234
 2025-11-04 21:14:38.967 [main] INFO  com.jvmprofiler.monitor.prometheus.PrometheusMetricsExporter - Prometheus metrics server started on port 9090
 2025-11-04 21:14:38.969 [main] INFO  com.jvmprofiler.monitor.prometheus.PrometheusMetricsExporter - Metrics available at: http://localhost:9090/metrics
+2025-11-04 21:55:01.977 [main] INFO  com.jvmprofiler.monitor.prometheus.PrometheusMetricsExporter - Prometheus metrics server started on port 9090
+2025-11-04 21:55:01.978 [main] INFO  com.jvmprofiler.monitor.prometheus.PrometheusMetricsExporter - Metrics available at: http://localhost:9090/metrics
+2025-11-04 21:55:09.055 [main] INFO  com.jvmprofiler.Main - Starting JVM Profiler Tool
+2025-11-04 21:55:09.070 [main] INFO  com.jvmprofiler.cli.CLIHandler - Starting monitoring for PID: 1234, interval: 2s, duration: unlimited
+2025-11-04 21:55:09.113 [main] ERROR com.jvmprofiler.monitor.JVMProfilerJMXConnector - Failed to connect to JVM process 1234: Failed to retrieve RMIServer stub: javax.naming.ServiceUnavailableException [Root exception is java.rmi.ConnectException: Connection refused to host: 127.0.0.1; nested exception is: 
+	java.net.ConnectException: Connection refused: connect]
+2025-11-04 21:57:43.683 [main] INFO  com.jvmprofiler.monitor.prometheus.PrometheusMetricsExporter - Prometheus metrics server started on port 9090
+2025-11-04 21:57:43.685 [main] INFO  com.jvmprofiler.monitor.prometheus.PrometheusMetricsExporter - Metrics available at: http://localhost:9090/metrics
+2025-11-04 21:58:25.737 [main] INFO  com.jvmprofiler.Main - Starting JVM Profiler Tool
+2025-11-04 21:58:25.745 [main] INFO  com.jvmprofiler.cli.CLIHandler - Starting monitoring for PID: 1234, interval: 2s, duration: unlimited
+2025-11-04 21:58:25.822 [main] INFO  com.jvmprofiler.monitor.JVMProfilerJMXConnector - Successfully connected to JVM process: 1234
+2025-11-04 22:08:27.433 [main] INFO  com.jvmprofiler.Main - Starting JVM Profiler Tool
+2025-11-04 22:08:27.442 [main] INFO  com.jvmprofiler.cli.CLIHandler - Starting monitoring for PID: 1234, interval: 2s, duration: unlimited
+2025-11-04 22:08:27.520 [main] INFO  com.jvmprofiler.monitor.JVMProfilerJMXConnector - Successfully connected to JVM process: 1234
+2025-11-04 22:08:37.748 [main] INFO  com.jvmprofiler.monitor.prometheus.PrometheusMetricsExporter - Prometheus metrics server started on port 9090
+2025-11-04 22:08:37.750 [main] INFO  com.jvmprofiler.monitor.prometheus.PrometheusMetricsExporter - Metrics available at: http://localhost:9090/metrics
+2025-11-04 22:09:20.071 [main] INFO  com.jvmprofiler.Main - Starting JVM Profiler Tool
+2025-11-04 22:09:20.086 [main] INFO  com.jvmprofiler.cli.CLIHandler - Starting monitoring for PID: 1234, interval: 2s, duration: unlimited
+2025-11-04 22:09:20.194 [main] INFO  com.jvmprofiler.monitor.JVMProfilerJMXConnector - Successfully connected to JVM process: 1234
+2025-11-04 22:09:33.031 [main] INFO  com.jvmprofiler.monitor.prometheus.PrometheusMetricsExporter - Prometheus metrics server started on port 9090
+2025-11-04 22:09:33.032 [main] INFO  com.jvmprofiler.monitor.prometheus.PrometheusMetricsExporter - Metrics available at: http://localhost:9090/metrics
