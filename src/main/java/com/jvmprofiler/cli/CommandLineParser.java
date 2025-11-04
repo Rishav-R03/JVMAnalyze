@@ -58,6 +58,31 @@ public class CommandLineParser {
                 .desc("Detect memory leaks in GC log file")
                 .build();
 
+        // Prometheus
+        // Add these options to your setupOptions() method
+        Option prometheus = Option.builder("P")
+                .longOpt("prometheus")
+                .hasArg(false)
+                .desc("Enable Prometheus metrics export")
+                .build();
+
+        Option prometheusPort = Option.builder("pp")
+                .longOpt("prometheus-port")
+                .hasArg()
+                .argName("port")
+                .desc("Prometheus metrics server port (default: 9091)")
+                .build();
+
+        Option metricsServer = Option.builder("M")
+                .longOpt("metrics-server")
+                .hasArg(false)
+                .desc("Start standalone Prometheus metrics server")
+                .build();
+
+// Add to options
+        options.addOption(prometheus);
+        options.addOption(prometheusPort);
+        options.addOption(metricsServer);
         options.addOption(monitor);
         options.addOption(interval);
         options.addOption(duration);

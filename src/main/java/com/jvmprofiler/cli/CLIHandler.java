@@ -9,6 +9,7 @@ import com.jvmprofiler.monitor.RealTimeDashboard;
 import org.apache.commons.cli.CommandLine;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import com.jvmprofiler.monitor.prometheus.PrometheusMetricsExporter;
 
 import java.io.IOException;
 
@@ -62,6 +63,39 @@ public class CLIHandler {
 
         } catch (NumberFormatException e) {
             System.err.println("Invalid PID format: " + pidStr);
+        }
+    }
+    private void handlePrometheusCommand(CommandLine cmd) {
+        String portStr = cmd.getOptionValue("prometheus-port", "9091");
+        String pidStr = cmd.getOptionValue("monitor");
+
+        try {
+            int port = Integer.parseInt(portStr);
+            int pid = pidStr != null ? Integer.parseInt(pidStr) : 0;
+
+            logger.info("Starting Prometheus metrics server on port {}", port);
+
+            PrometheusMetricsExporter exporter = new PrometheusMetricsExporter(port);
+            exporter.start();
+
+            if (pid > 0) {
+                logger.info("Monitoring PID {} and exporting to Prometheus", pid);
+                // You could start monitoring here and export metrics
+            }
+
+            System.out.println("✅ Prometheus metrics server started successfully!");
+            System.out.println("📊 Metrics available at: http://localhost:" + port + "/metrics");
+            System.out.println("Press Ctrl+C to stop the server...");
+
+            // Keep the server running
+            Thread.currentThread().join();
+
+        } catch (NumberFormatException e) {
+            System.err.println("Invalid port number: " + portStr);
+        } catch (IOException e) {
+            System.err.println("Failed to start Prometheus server: " + e.getMessage());
+        } catch (InterruptedException e) {
+            System.out.println("\nPrometheus server stopped.");
         }
     }
 

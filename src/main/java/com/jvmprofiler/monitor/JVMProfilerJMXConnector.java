@@ -41,7 +41,7 @@ public class JVMProfilerJMXConnector {
     private String getJMXPort(int pid) {
         // Simple simulation - in real scenario, you'd parse from jps or use attach API
         // Common JMX ports: 9090, 9091, 9092, etc.
-        return "9090";
+        return "9091";
     }
 
     public JVMMetrics collectMetrics() {
